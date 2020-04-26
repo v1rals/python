@@ -5,14 +5,9 @@ def raises(FileNotFoundError):
         def wrapper(*args, **kwargs):
             try:
                 return func(*args, **kwargs)
-            except TypeError:
-                print("Got error! ", FileNotFoundError)
+            except TypeError as ve:
+                print("Got error! ",TypeError, ve)
+                raise FileNotFoundError
         return wrapper
     return actual_decorator
 
-
-@raises(FileNotFoundError)
-def return_str():
-    return "My shiny string" + 7
-
-return_str() # Ошибка FileNotFoundError
