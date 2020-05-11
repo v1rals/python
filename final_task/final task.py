@@ -84,7 +84,7 @@ class CountTags:
                 time = strftime("%Y/%m/%d %H:%M", gmtime())
                 logstring = time + " " + path + " " + str(result)
                 log.write(logstring + "\n")
-        if self.log == "l":
+        if self.log == "L":
             logging(self.path, self.result)
 
         def s3upload():     # upload to s3
