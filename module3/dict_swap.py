@@ -4,9 +4,3 @@ def dict_swap(swap):
     print(swap)
     print(swapped)
     return swapped
-swap = {
-       'Name': 'John',
-       'Age': 44,
-       'JobTitle': "DevOps"
-}
-dict_swap(swap)

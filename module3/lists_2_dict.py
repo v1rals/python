@@ -5,4 +5,3 @@ def lists_2_dict(keys, values):
     return dictionary
 keys = ['a', 'b', 'c']
 values = [1, 2, 3]
-lists_2_dict(keys, values)
