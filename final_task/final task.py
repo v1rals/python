@@ -87,7 +87,7 @@ class CountTags:
         if self.log == "l":
             logging(self.path, self.result)
 
-        def s3upload():
+        def s3upload():     # upload to s3
             import boto3
             file_name = 'log.txt'
             bucket_name = input("input source bucket name" + "\n")  # name of the bucket
